@@ -5,3 +5,15 @@
 # 2 2
 #     4
 
+
+
+def sum(a, b):
+    if b == 0: return a
+    elif a == 0: return b
+    return sum(a - 1, 1) + sum(1, b - 1)
+       
+    
+a1 = int(input("Введите целое число: \n"))
+b1 = int(input("Введите целое неотрицательное число: \n"))
+if a1 >= 0 and b1 >= 0: print(f"Сумма чисел {a1} и {b1} равна: {sum(a1, b1)}")
+else: print("Числа должны быть > или = 0")
