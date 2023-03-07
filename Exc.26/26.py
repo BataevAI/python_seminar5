@@ -8,7 +8,6 @@
 
 
 def pow_a_b(a, b):
-    pow_a = 1
     if b == 0 or a == 1: return 1
     return a * pow_a_b(a, b - 1)
        
