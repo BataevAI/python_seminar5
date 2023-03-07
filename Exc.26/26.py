@@ -5,5 +5,15 @@
 # A = 3; B = 5 -> 243 (3⁵)
 #     A = 2; B = 3 -> 8
 
-a = int(input())
-b = int(input())
+
+
+def pow_a_b(a, b):
+    pow_a = 1
+    if b == 0 or a == 1: return 1
+    else: 
+        return a * pow_a_b(a, b - 1)
+       
+    
+a1 = int(input("Введите целое число: \n"))
+b1 = int(input("Введите целое неотрицательное число: \n"))
+print(pow_a_b(a1, b1))
